@@ -2,15 +2,14 @@
 	<head>
 		<meta charset="UTF-8"/>
 	</head>
-	<body>
-		IFRAME <br/>
-		<button onclick="teste('MSG_TOKEN:OLÁ JEAN!!');">MSG_TOKEN</button>
-		<button onclick="teste('BACK_TOKEN');">BACK_TOKEN</button>
+	<body style="background-color: lightblue;">
+		Dentro do Iframe <br/>
+		<button onclick="enviar('MSG_TOKEN:OLÁ JEAN!!');">MSG_TOKEN</button>
+		<button onclick="enviar('BACK_TOKEN');">BACK_TOKEN</button>
 		<!--scripts-->
 		<script type="text/javascript">
-			function teste(msg) {
-				//window.location.href = URL;
-				parent.postMessage(msg,"*");  //  `*` on any domain   
+			function enviar(msg) {
+				parent.postMessage(msg,"*");  
 			}			
 		</script>
 	</body>
