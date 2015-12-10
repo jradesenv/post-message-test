@@ -4,9 +4,10 @@
 	</head>
 	<body style="background-color: lightblue;">
 		Dentro do Iframe <br/>
-		<button onclick="enviar('MSG_TOKEN:OLÁ JEAN!!');">MSG_TOKEN</button>
-		<br/>
-		<button onclick="enviar('BACK_TOKEN');">BACK_TOKEN</button>
+		<div style="width: 100%">
+			<button style="float: left; width: 40%; height: 50px;" onclick="enviar('BACK_TOKEN');">BACK_TOKEN</button>
+			<button style="float: right; width: 40%; height: 50px;" onclick="enviar('MSG_TOKEN:OLÁ JEAN!!');">MSG_TOKEN</button>
+		</div>
 		<!--scripts-->
 		<script type="text/javascript">
 			function enviar(msg) {
